@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
@@ -8,8 +7,9 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text(
-            "CPSU project",),
+          title: Text(
+            "CPSU project",
+          ),
           backgroundColor: Colors.redAccent,
           centerTitle: true,
         ),
