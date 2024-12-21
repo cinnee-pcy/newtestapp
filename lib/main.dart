@@ -29,8 +29,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
           body: Center(
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+              child: TextButton(
                   onPressed: () {
                     print('Can Press');
                   },
