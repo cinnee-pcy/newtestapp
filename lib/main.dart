@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: const Color.fromARGB(255, 178, 208, 222),
           ),
           body: Container(
-            color: Colors.black,
+            color: Colors.grey,
             margin: EdgeInsets.all(10),
             padding: const EdgeInsets.all(30),
             width: 200,
