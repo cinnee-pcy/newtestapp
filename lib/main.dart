@@ -28,25 +28,13 @@ class MyApp extends StatelessWidget {
             leading: const Icon(Icons.people),
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
-          body: Container(
-            color: const Color.fromARGB(255, 250, 204, 204),
-            child: Column(
-              children: [
-                Expanded(
-                    flex: 1,
-                    child: Container(
-                      color: Colors.red,
-                      height: 100,
-                    )),
-                Expanded(
-                  flex: 4,
-                    child: Container(
-                  color: Colors.amber,
-                  height: 100,
-                ))
-              ],
-            ),
-          ),
+          body: Center(
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+                  onPressed: () {
+                    print('Can Press');
+                  },
+                  child: const Text("Press Me"))),
           floatingActionButton: FloatingActionButton(
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
             splashColor: Colors.amber,
