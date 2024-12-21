@@ -28,43 +28,26 @@ class MyApp extends StatelessWidget {
             leading: const Icon(Icons.people),
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
-          body:Container(
+          body: Container(
             color: const Color.fromARGB(255, 250, 204, 204),
-            child:  Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                padding: const EdgeInsets.all(50),
-                color: Colors.red,
-                child: const Text(
-                  "Item 1",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              //const SizedBox(width: 20),
-              Container(
-                padding: const EdgeInsets.all(50),
-                color: Colors.green,
-                child: const Text(
-                  "Item 2",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-              //const SizedBox(width: 20),
-              Container(
-                padding: const EdgeInsets.all(50),
-                color: Colors.black,
-                child: const Text(
-                  "Item 3",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ],
-          ),
+            child: Column(
+              children: [
+                Expanded(
+                    flex: 1,
+                    child: Container(
+                      color: Colors.red,
+                      height: 100,
+                    )),
+                Expanded(
+                  flex: 4,
+                    child: Container(
+                  color: Colors.amber,
+                  height: 100,
+                ))
+              ],
+            ),
           ),
           floatingActionButton: FloatingActionButton(
-            
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
             splashColor: Colors.amber,
             onPressed: () {
