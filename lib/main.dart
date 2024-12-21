@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newtestapp/homepage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,26 +23,49 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text(
               'AppBar Flutter Demo',
-              style: TextStyle(color: Colors.pink),
+              style: TextStyle(color: Colors.amber),
             ),
-            leading: const Icon(Icons.add),
-            backgroundColor: const Color.fromARGB(255, 178, 208, 222),
+            leading: const Icon(Icons.people),
+            backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
-          body: Container(
-            color: Colors.grey,
-            margin: EdgeInsets.all(10),
-            padding: const EdgeInsets.all(30),
-            width: 200,
-            height: 200,
-            child: FloatingActionButton(
-                backgroundColor: Colors.pink,
-                splashColor: Colors.amber,
-                onPressed: () {
-                  print("Hello");
-                }),
+          body:Container(
+            color: const Color.fromARGB(255, 250, 204, 204),
+            child:  Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(50),
+                color: Colors.red,
+                child: const Text(
+                  "Item 1",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              //const SizedBox(width: 20),
+              Container(
+                padding: const EdgeInsets.all(50),
+                color: Colors.green,
+                child: const Text(
+                  "Item 2",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              //const SizedBox(width: 20),
+              Container(
+                padding: const EdgeInsets.all(50),
+                color: Colors.black,
+                child: const Text(
+                  "Item 3",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ],
+          ),
           ),
           floatingActionButton: FloatingActionButton(
-            backgroundColor: Colors.pink,
+            
+            backgroundColor: const Color.fromARGB(255, 180, 5, 5),
             splashColor: Colors.amber,
             onPressed: () {
               print("Cute");
