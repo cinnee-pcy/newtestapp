@@ -28,16 +28,21 @@ class MyApp extends StatelessWidget {
             leading: const Icon(Icons.people),
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
-          body: ListView.builder(
-              itemCount: 20,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  leading: const Icon(Icons.add),
-                  title: Text('Item $index'),
-                  subtitle: const Text('data...'),
-                  trailing: const Icon(Icons.person),
-                );
-              }),
+          body: ListView(
+            padding: const EdgeInsets.all(10),
+            scrollDirection: Axis.horizontal,
+            shrinkWrap: true,
+            reverse: true,
+            children: [
+              Container(width: 300, color: Colors.purple,),
+              Container(width: 300, color: Colors.blueGrey,),
+              Container(width: 300, color: Colors.blue,),
+              Container(width: 300, color: Colors.green,),
+              Container(width: 300, color: Colors.yellow,),
+              Container(width: 300, color: Colors.orange,),
+              Container(width: 300, color: Colors.red,),
+            ],
+          ),
         )
         // hhdufs
         );
