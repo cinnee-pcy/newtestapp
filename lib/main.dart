@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newtestapp/homepage.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,19 +28,27 @@ class MyApp extends StatelessWidget {
             leading: const Icon(Icons.people),
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
-          body: Center(
-              child: TextButton(
-                  onPressed: () {
-                    print('Can Press');
-                  },
-                  child: const Text("Press Me"))),
-          floatingActionButton: FloatingActionButton(
-            backgroundColor: const Color.fromARGB(255, 180, 5, 5),
-            splashColor: Colors.amber,
-            onPressed: () {
-              print("Cute");
-            },
-            child: const Icon(Icons.heart_broken),
+          body: ListView(
+            children: [
+              Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.grey,
+                child: const Text('Item 1'),
+              ),
+              Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.red,
+                child: const Text('Item 2'),
+              ),
+              Container(
+                height: 100,
+                width: double.infinity,
+                color: Colors.yellow,
+                child: const Text('Item 3'),
+              )
+            ],
           ),
         )
         // hhdufs

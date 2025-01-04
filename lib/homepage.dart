@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -8,8 +8,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
-            "CPSU project",style: GoogleFonts.bubblegumSans(),
+          title: const Text(
+            "CPSU project",
           ),
           backgroundColor: Colors.redAccent,
           centerTitle: true,
