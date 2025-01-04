@@ -28,28 +28,16 @@ class MyApp extends StatelessWidget {
             leading: const Icon(Icons.people),
             backgroundColor: const Color.fromARGB(255, 180, 5, 5),
           ),
-          body: ListView(
-            children: [
-              Container(
-                height: 100,
-                width: double.infinity,
-                color: Colors.grey,
-                child: const Text('Item 1'),
-              ),
-              Container(
-                height: 100,
-                width: double.infinity,
-                color: Colors.red,
-                child: const Text('Item 2'),
-              ),
-              Container(
-                height: 100,
-                width: double.infinity,
-                color: Colors.yellow,
-                child: const Text('Item 3'),
-              )
-            ],
-          ),
+          body: ListView.builder(
+              itemCount: 20,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  leading: const Icon(Icons.add),
+                  title: Text('Item $index'),
+                  subtitle: const Text('data...'),
+                  trailing: const Icon(Icons.person),
+                );
+              }),
         )
         // hhdufs
         );
